@@ -22,7 +22,7 @@ function HomeNav() {
     <nav className="navbar navbar-expand-lg bg-info fixed-top">
       <div className="container-fluid">
         <Link className="navbar-brand fw-bold" to="/">
-            🌐 QC Simulation
+           MyOS3+
         </Link>
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +46,7 @@ function HomeNav() {
                </span>
               <ul className="dropdown-menu" style={{ backgroundColor: "#8aacc4ff" }}>
                 <li><Link className="dropdown-item" to="/science-simulations">SCIENCE SIMULATION</Link></li>
-                <li><Link className="dropdown-item" to="/maths-simulations"> MATHS SIMULATION</Link></li>
+                <li><Link className="dropdown-item" to="/maths-simulations"> MORE CONCEPTS</Link></li>
                 <li><Link className="dropdown-item" to="https://grand-pasca-ee1c30.netlify.app/">GAME</Link></li>
                 <li><hr className="dropdown-divider" /></li>
                 <li><Link className="dropdown-item" to="/courses">🎓 Courses</Link></li>
@@ -64,7 +64,7 @@ function HomeNav() {
                 <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" onClick={HandleOnClick} />
                 <label className="form-check-label" htmlFor="checkNativeSwitch">{DARK}</label>
             </div>
-            <input id="searchInput" className="form-control me-2" type="search" placeholder="Search blogs..." aria-label="Search" />
+            <input id="searchInput" className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
             <button className="btn btn-outline-white" style={{ backgroundColor: "#8aacc4ff" }} type="submit">🔍</button>
           </form>
         </div>

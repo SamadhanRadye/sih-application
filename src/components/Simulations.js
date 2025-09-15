@@ -95,9 +95,9 @@ function Simulations() {
             <ul style={aside}>
               {simulations.map((simulation) => (
                 <li key={simulation.id}>
-                  <button 
+                  <button
                     style={activeSimulation === simulation.id ? activeButtonStyle : buttonStyle}
-                    type="button" 
+                    type="button"
                     onClick={() => handleSimulationClick(simulation.id)}
                   >
                     {simulation.name}
@@ -112,7 +112,7 @@ function Simulations() {
         <div className="stimulator">
           <iframe
             src={currentSimulation.src}
-            width="800"
+            width="700"
             height="600"
             title={currentSimulation.title}
             allowFullScreen
@@ -122,6 +122,16 @@ function Simulations() {
         {/* MCQ Section */}
         <div style={{ marginLeft: '20px', fontSize: '20px', border: '3px solid grey', padding: '10px', height: '600px' }}>
           MCQ QUESTIONS SECTION
+          <h4>1.⁠ ⁠Why are the water molecules packed closely together at 146 K in the simulation?</h4>
+          <input type="radio" id="huey" name="drone" value="huey" />
+          <label for="huey">A. Because they are in the solid state</label><br />
+          <input type="radio" id="huey" name="drone" value="huey" />
+          <label for="huey">B. Because they are in the liquid state</label><br />
+          <input type="radio" id="huey" name="drone" value="huey" />
+          <label for="huey">C. Because they are in a gaseous state</label><br />
+          <input type="radio" id="huey" name="drone" value="huey" />
+          <label for="huey">D. Because they have maximum kinetic energy</label><br />
+          <button type="button" className="btn btn-primary mt-3">Submit</button>
         </div>
       </div>
 
@@ -129,17 +139,25 @@ function Simulations() {
       <div style={{ marginLeft: '20px', fontSize: '20px', border: '3px solid grey', padding: '10px', height: '600px' }}>
         <h1>EXPLANATION</h1>
         <h2>{currentSimulation.name}</h2>
-        <p>
-          This simulation demonstrates concepts related to {currentSimulation.name.toLowerCase()}. 
-          Use the interactive elements within the simulation to explore different scenarios and observe 
-          how various parameters affect the behavior of the system.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <h3>Correct Answer for Q1: A. Because they are in the solid state</h3>
+        <h3>At 146 K (Kelvin):</h3>
+        The temperature is very low, so molecules have very little kinetic energy (they can only vibrate, not move freely).
+        Since they cannot overcome the intermolecular attractive forces, they stay locked in fixed positions.
+        In the simulator, you see the water molecules clustered tightly at the bottom — this represents the solid state (ice).
+
+        <h3>Potential Energy Aspect:</h3>
+        In solids, particles have low potential energy because they are strongly bound together in fixed positions.
+        The strong attractions keep them close, so potential energy is minimum (lowest state of energy).
+
+        <h3>Kinetic Energy Aspect:</h3>
+        Because of low temperature, molecules have minimum kinetic energy (just vibrating in place).
+        They are not moving around freely like in liquids or gases.
+
+        <h3>Simulator Demonstration:</h3>
+        If you press "Heat", the thermometer rises.
+        First, kinetic energy increases (molecules vibrate faster).
+        At the melting point, heat energy goes into increasing potential energy (breaking bonds), while temperature stays constant.
+        Molecules then spread out to form a liquid.
       </div>
     </>
   );
