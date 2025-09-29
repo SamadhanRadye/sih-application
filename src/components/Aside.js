@@ -28,7 +28,7 @@ function Aside() {
       <Link to="/" style={linkStyle}>Home</Link>
       <Link to="/about" style={linkStyle}>About</Link>
       <Link to="/science-simulations" style={linkStyle}>SCIENCE SIMULATION</Link>
-      <Link to="" style={linkStyle}>GAME</Link>
+      <Link to="https://grand-pasca-ee1c30.netlify.app/" style={linkStyle}>GAME</Link>
     </aside>
   );
 }
